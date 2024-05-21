@@ -1,10 +1,11 @@
 package se.main.springboothtmxbankapplication.account.domain;
 
-import se.main.springboothtmxbankapplication.primitives.AggregateId;
+import se.main.springboothtmxbankapplication.primitive.AggregateId;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class AccountId extends AggregateId {
+public class AccountId extends AggregateId implements Serializable {
 
     private AccountId(UUID id) {
         super(id);

@@ -12,7 +12,9 @@ spring:
       enabled: true
       settings:
         web-allow-others: true
-#spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL95Dialect
+  jpa:
+    hibernate:
+      ddl-auto: update
 
 axon:
   axonserver:

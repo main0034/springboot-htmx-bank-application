@@ -1,9 +1,9 @@
-package se.main.springboothtmxbankapplication.account.commands;
+package se.main.springboothtmxbankapplication.account.command;
 
 import com.google.common.base.VerifyException;
 import org.junit.jupiter.api.Test;
 import se.main.springboothtmxbankapplication.account.domain.Balance;
-import se.main.springboothtmxbankapplication.primitives.CustomerId;
+import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 import java.math.BigInteger;
 import java.util.UUID;

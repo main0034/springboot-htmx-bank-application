@@ -1,8 +1,8 @@
-package se.main.springboothtmxbankapplication.account.events;
+package se.main.springboothtmxbankapplication.account.event;
 
 import se.main.springboothtmxbankapplication.account.domain.AccountId;
 import se.main.springboothtmxbankapplication.account.domain.Balance;
-import se.main.springboothtmxbankapplication.primitives.CustomerId;
+import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 public record AccountCreatedEvent(
         AccountId accountId,

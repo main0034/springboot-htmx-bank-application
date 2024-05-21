@@ -1,4 +1,4 @@
-package se.main.springboothtmxbankapplication.primitives;
+package se.main.springboothtmxbankapplication.primitive;
 
 import com.google.common.base.VerifyException;
 import org.junit.jupiter.api.Test;

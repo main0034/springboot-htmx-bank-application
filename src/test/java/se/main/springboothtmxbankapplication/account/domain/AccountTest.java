@@ -4,9 +4,9 @@ import org.axonframework.test.aggregate.AggregateTestFixture;
 import org.axonframework.test.aggregate.FixtureConfiguration;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import se.main.springboothtmxbankapplication.account.commands.CreateAccountCommand;
-import se.main.springboothtmxbankapplication.account.events.AccountCreatedEvent;
-import se.main.springboothtmxbankapplication.primitives.CustomerId;
+import se.main.springboothtmxbankapplication.account.command.CreateAccountCommand;
+import se.main.springboothtmxbankapplication.account.event.AccountCreatedEvent;
+import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 import java.math.BigInteger;
 import java.util.Objects;

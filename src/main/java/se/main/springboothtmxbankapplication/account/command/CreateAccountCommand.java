@@ -1,8 +1,8 @@
-package se.main.springboothtmxbankapplication.account.commands;
+package se.main.springboothtmxbankapplication.account.command;
 
 import com.google.common.base.Verify;
 import se.main.springboothtmxbankapplication.account.domain.Balance;
-import se.main.springboothtmxbankapplication.primitives.CustomerId;
+import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 public record CreateAccountCommand(
         CustomerId customerId,
