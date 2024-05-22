@@ -21,7 +21,7 @@ class AccountEntityConverterTest {
 
         AccountEntity entity = converter.toEntity(account);
 
-        assertThat(entity.getAccountId()).isEqualTo(account.accountId().getId());
+        assertThat(entity.getAccountId()).isEqualTo(account.id().getId());
         assertThat(entity.getCustomerId()).isEqualTo(account.customerId().getId());
         assertThat(entity.getBalanceInCents()).isEqualTo(account.balance().balanceInCents());
     }
@@ -36,7 +36,7 @@ class AccountEntityConverterTest {
 
         Account account = converter.toDomain(entity);
 
-        assertThat(account.accountId().getId()).isEqualTo(entity.getAccountId());
+        assertThat(account.id().getId()).isEqualTo(entity.getAccountId());
         assertThat(account.customerId().getId()).isEqualTo(entity.getCustomerId());
         assertThat(account.balance().balanceInCents()).isEqualTo(entity.getBalanceInCents());
     }

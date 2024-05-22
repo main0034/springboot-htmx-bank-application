@@ -4,7 +4,9 @@ import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.context.annotation.Import;
 import se.main.springboothtmxbankapplication.AccountTestFactory;
+import se.main.springboothtmxbankapplication.adapter.hibernate.CustomerTestDataHelper;
 import se.main.springboothtmxbankapplication.adapter.hibernate.account.entity.AccountEntity;
 
 import java.util.List;
@@ -14,6 +16,7 @@ import java.util.stream.IntStream;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
+@Import(CustomerTestDataHelper.class)
 class AccountJpaRepositoryTest {
 
     @Autowired
@@ -21,6 +24,9 @@ class AccountJpaRepositoryTest {
 
     @Autowired
     private EntityManager entityManager;
+
+    @Autowired
+    private CustomerTestDataHelper customerTestDataHelper;
 
     @Test
     void findByCustomerId_returns_all_accounts_for_customer() {
@@ -56,12 +62,7 @@ class AccountJpaRepositoryTest {
     }
 
     private void saveCustomerWithId(UUID customerId) {
-        entityManager.createNativeQuery(
-                        """
-                                insert into customers (customer_id, name, surname) values ('%s', 'Test', 'Testsson');
-                                """.formatted(customerId.toString())
-                )
-                .executeUpdate();
+        customerTestDataHelper.saveCustomerWithId(customerId);
     }
 
 }

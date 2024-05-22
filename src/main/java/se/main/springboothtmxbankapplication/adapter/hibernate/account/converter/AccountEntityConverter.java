@@ -12,7 +12,7 @@ public class AccountEntityConverter {
 
     public AccountEntity toEntity(Account account) {
         return new AccountEntity(
-                account.accountId().getId(),
+                account.id().getId(),
                 account.customerId().getId(),
                 account.balance().balanceInCents()
         );

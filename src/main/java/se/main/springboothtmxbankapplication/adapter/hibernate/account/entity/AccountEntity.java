@@ -11,7 +11,7 @@ import java.math.BigInteger;
 import java.util.UUID;
 
 @Entity
-@Table(name="ACCOUNTS")
+@Table(name = "ACCOUNTS")
 @Getter
 @AllArgsConstructor
 public class AccountEntity {

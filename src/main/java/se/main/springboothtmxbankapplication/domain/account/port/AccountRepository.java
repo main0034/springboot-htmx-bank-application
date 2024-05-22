@@ -1,4 +1,4 @@
-package se.main.springboothtmxbankapplication.domain.port;
+package se.main.springboothtmxbankapplication.domain.account.port;
 
 import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
 import se.main.springboothtmxbankapplication.primitive.CustomerId;

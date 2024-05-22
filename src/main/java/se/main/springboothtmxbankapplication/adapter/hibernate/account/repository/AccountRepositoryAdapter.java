@@ -3,7 +3,7 @@ package se.main.springboothtmxbankapplication.adapter.hibernate.account.reposito
 import org.springframework.stereotype.Component;
 import se.main.springboothtmxbankapplication.adapter.hibernate.account.converter.AccountEntityConverter;
 import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
-import se.main.springboothtmxbankapplication.domain.port.AccountRepository;
+import se.main.springboothtmxbankapplication.domain.account.port.AccountRepository;
 import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 import java.util.List;

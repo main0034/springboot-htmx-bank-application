@@ -9,7 +9,7 @@ import se.main.springboothtmxbankapplication.primitive.CustomerId;
 import java.math.BigInteger;
 import java.util.UUID;
 
-public class AccountTestFactory {
+public final class AccountTestFactory {
 
     public static final Balance INITIAL_BALANCE_ZERO = Balance.from(BigInteger.ZERO);
 
@@ -23,9 +23,9 @@ public class AccountTestFactory {
 
     public static AccountEntity entityWithBalanceZero() {
         return new AccountEntity(
-          newAccountId().getId(),
-          newCustomerId().getId(),
-          INITIAL_BALANCE_ZERO.balanceInCents()
+                newAccountId().getId(),
+                newCustomerId().getId(),
+                INITIAL_BALANCE_ZERO.balanceInCents()
         );
     }
 

@@ -32,7 +32,7 @@ public class Account {
         return false;
     }
 
-    public AccountId accountId() {
+    public AccountId id() {
         return accountId;
     }
 
