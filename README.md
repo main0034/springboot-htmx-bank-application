@@ -1,0 +1,1 @@
+# Small banking application using Spring Boot, Axon Framework, HTMX and GraphQL
