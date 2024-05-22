@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringBootHtmxBankApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringBootHtmxBankApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootHtmxBankApplication.class, args);
+    }
 
 }
