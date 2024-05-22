@@ -1,6 +1,6 @@
 package se.main.springboothtmxbankapplication.adapter.hibernate.account.repository;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import se.main.springboothtmxbankapplication.adapter.hibernate.account.converter.AccountEntityConverter;
 import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
 import se.main.springboothtmxbankapplication.domain.account.port.AccountRepository;
@@ -8,7 +8,7 @@ import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 import java.util.List;
 
-@Component
+@Repository
 public class AccountRepositoryAdapter implements AccountRepository {
 
     private final AccountJpaRepository jpaRepository;

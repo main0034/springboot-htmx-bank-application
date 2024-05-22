@@ -1,13 +1,13 @@
 package se.main.springboothtmxbankapplication.adapter.hibernate.customer.repository;
 
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import se.main.springboothtmxbankapplication.adapter.hibernate.customer.converter.CustomerEntityConverter;
 import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
 import se.main.springboothtmxbankapplication.domain.customer.port.CustomerRepository;
 import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
-@Component
+@Repository
 public class CustomerRepositoryAdapter implements CustomerRepository {
 
     private final CustomerJpaRepository jpaRepository;

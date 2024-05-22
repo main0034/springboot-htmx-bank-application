@@ -3,9 +3,9 @@ package se.main.springboothtmxbankapplication.domain.account.aggregate;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import se.main.springboothtmxbankapplication.AccountTestFactory;
-import se.main.springboothtmxbankapplication.domain.account.primitve.AccountId;
-import se.main.springboothtmxbankapplication.domain.account.primitve.Amount;
 import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.primitive.AccountId;
+import se.main.springboothtmxbankapplication.primitive.Amount;
 import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 import java.math.BigInteger;

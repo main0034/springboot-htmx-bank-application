@@ -1,6 +1,4 @@
-package se.main.springboothtmxbankapplication.domain.account.primitve;
-
-import se.main.springboothtmxbankapplication.primitive.AggregateId;
+package se.main.springboothtmxbankapplication.primitive;
 
 import java.util.UUID;
 

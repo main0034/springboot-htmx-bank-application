@@ -1,4 +1,4 @@
-package se.main.springboothtmxbankapplication.domain.account.primitve;
+package se.main.springboothtmxbankapplication.primitive;
 
 import org.apache.commons.lang3.Validate;
 
@@ -12,5 +12,9 @@ public record Amount(BigInteger value) {
 
     public static Amount from(long value) {
         return new Amount(BigInteger.valueOf(value));
+    }
+
+    public static Amount from(BigInteger value) {
+        return new Amount(value);
     }
 }

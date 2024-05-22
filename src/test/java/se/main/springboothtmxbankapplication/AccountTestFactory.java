@@ -2,8 +2,8 @@ package se.main.springboothtmxbankapplication;
 
 import se.main.springboothtmxbankapplication.adapter.hibernate.account.entity.AccountEntity;
 import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
-import se.main.springboothtmxbankapplication.domain.account.primitve.AccountId;
 import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.primitive.AccountId;
 import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 import java.math.BigInteger;
@@ -19,6 +19,10 @@ public final class AccountTestFactory {
 
     public static Account accountWithBalance(long balance) {
         return new Account(newAccountId(), newCustomerId(), Balance.from(BigInteger.valueOf(balance)));
+    }
+
+    public static Account accountWithCustomerId(CustomerId customerId) {
+        return new Account(newAccountId(), customerId, INITIAL_BALANCE_ZERO);
     }
 
     public static AccountEntity entityWithBalanceZero() {

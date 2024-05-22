@@ -1,4 +1,5 @@
-package se.main.springboothtmxbankapplication.adapter.hibernate.account.entity;
+package se.main.springboothtmxbankapplication.adapter.hibernate.transaction.entity;
+
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,22 +10,28 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.math.BigInteger;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "accounts")
+@Table(name = "transactions")
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AccountEntity {
+public class TransactionEntity {
 
     @Id
+    @Column(name = "transaction_id")
+    private UUID id;
+
     @Column(name = "account_id")
     private UUID accountId;
 
-    @Column(name = "customer_id")
-    private UUID customerId;
+    private int type;
 
-    @Column(name = "balance_in_cents")
-    private BigInteger balanceInCents;
+    private BigInteger amount;
+
+    private LocalDateTime timestamp;
+
+    private String description;
 }

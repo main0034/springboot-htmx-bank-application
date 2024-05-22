@@ -1,6 +1,5 @@
 package se.main.springboothtmxbankapplication.adapter.hibernate.account.repository;
 
-import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -21,9 +20,6 @@ class AccountJpaRepositoryTest {
 
     @Autowired
     private AccountJpaRepository accountJpaRepository;
-
-    @Autowired
-    private EntityManager entityManager;
 
     @Autowired
     private CustomerTestDataHelper customerTestDataHelper;

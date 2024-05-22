@@ -2,9 +2,9 @@ package se.main.springboothtmxbankapplication.domain.account.aggregate;
 
 
 import org.apache.commons.lang3.Validate;
-import se.main.springboothtmxbankapplication.domain.account.primitve.AccountId;
-import se.main.springboothtmxbankapplication.domain.account.primitve.Amount;
 import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.primitive.AccountId;
+import se.main.springboothtmxbankapplication.primitive.Amount;
 import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
 public class Account {
