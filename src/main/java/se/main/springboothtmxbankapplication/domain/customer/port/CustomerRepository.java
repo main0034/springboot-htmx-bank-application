@@ -9,4 +9,6 @@ public interface CustomerRepository {
 
     Customer getById(CustomerId customerId);
 
+    boolean exists(CustomerId customerId);
+
 }

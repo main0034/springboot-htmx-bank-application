@@ -29,4 +29,16 @@ public record Balance(
     public boolean hasCoverage(Amount amount) {
         return balanceInCents.compareTo(amount.value()) >= 0;
     }
+
+    public boolean isPositive() {
+        return balanceInCents.compareTo(BigInteger.ZERO) >= 0;
+    }
+
+    public boolean isZero() {
+        return balanceInCents.compareTo(BigInteger.ZERO) == 0;
+    }
+
+    public BigInteger abs() {
+        return balanceInCents.abs();
+    }
 }

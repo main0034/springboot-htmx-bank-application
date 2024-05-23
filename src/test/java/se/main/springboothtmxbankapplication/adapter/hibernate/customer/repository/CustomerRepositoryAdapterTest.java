@@ -2,10 +2,15 @@ package se.main.springboothtmxbankapplication.adapter.hibernate.customer.reposit
 
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import se.main.springboothtmxbankapplication.CustomerTestFactory;
 import se.main.springboothtmxbankapplication.adapter.hibernate.customer.converter.CustomerEntityConverter;
 import se.main.springboothtmxbankapplication.adapter.hibernate.customer.entity.CustomerEntity;
 import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
+import se.main.springboothtmxbankapplication.primitive.CustomerId;
+
+import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.any;
@@ -44,5 +49,17 @@ class CustomerRepositoryAdapterTest {
 
         verify(jpaRepository).getReferenceById(customerConverted.id().getId());
         verify(converter).toDomain(entity);
+    }
+
+    @ParameterizedTest
+    @ValueSource(booleans = {true, false})
+    void exists_returns_response_from_repository(boolean exists) {
+        when(jpaRepository.existsById(any())).thenReturn(exists);
+
+        CustomerId customerId = CustomerId.from(UUID.randomUUID());
+        boolean result = customerRepositoryAdapter.exists(customerId);
+
+        assertThat(result).isEqualTo(exists);
+        verify(jpaRepository).existsById(customerId.getId());
     }
 }

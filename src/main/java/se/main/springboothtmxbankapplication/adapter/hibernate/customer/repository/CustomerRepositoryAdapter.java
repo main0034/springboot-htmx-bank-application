@@ -29,4 +29,9 @@ public class CustomerRepositoryAdapter implements CustomerRepository {
         var entity = jpaRepository.getReferenceById(customerId.getId());
         return converter.toDomain(entity);
     }
+
+    @Override
+    public boolean exists(CustomerId customerId) {
+        return jpaRepository.existsById(customerId.getId());
+    }
 }
