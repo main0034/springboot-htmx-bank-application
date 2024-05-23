@@ -9,6 +9,7 @@ import se.main.springboothtmxbankapplication.primitive.AccountId;
 import se.main.springboothtmxbankapplication.primitive.Amount;
 
 import java.util.Optional;
+import java.util.UUID;
 
 public class Transaction {
 
@@ -31,6 +32,17 @@ public class Transaction {
         this.amount = Validate.notNull(amount, "amount must not be null");
         this.timestamp = Validate.notNull(timestamp, "timestamp must not be null");
         this.description = description;
+    }
+
+    public static Transaction createNew(AccountId accountId, TransactionType type, Amount amount) {
+        return new Transaction(
+                TransactionId.from(UUID.randomUUID()),
+                accountId,
+                type,
+                amount,
+                Timestamp.now(),
+                null
+        );
     }
 
     public TransactionId id() {

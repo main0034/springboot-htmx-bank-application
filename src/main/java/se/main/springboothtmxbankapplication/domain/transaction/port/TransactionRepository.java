@@ -9,6 +9,7 @@ public interface TransactionRepository {
 
     void save(Transaction transaction);
 
+    // TODO Should be paginated
     List<Transaction> findByAccountIdOrderedByTimestampDescending(AccountId accountId);
 
     // TODO: More queries could be supported depening on the use case e.g.

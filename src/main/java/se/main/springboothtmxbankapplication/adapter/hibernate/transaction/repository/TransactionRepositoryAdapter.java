@@ -26,6 +26,7 @@ public class TransactionRepositoryAdapter implements TransactionRepository {
         jpaRepository.save(entity);
     }
 
+    // TODO Should be paginated
     @Override
     public List<Transaction> findByAccountIdOrderedByTimestampDescending(AccountId accountId) {
         return jpaRepository.findAllByAccountIdOrderByTimestampDesc(accountId.getId())

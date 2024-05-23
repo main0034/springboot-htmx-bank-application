@@ -57,7 +57,7 @@ public class CreateNewAccountUseCase {
         TransactionType type = balance.isPositive() ? TransactionType.INCOMING : TransactionType.OUTGOING;
 
         Amount amountAbsoluteValue = Amount.from(balance.abs());
-        transactionService.createNew(accountId, type, amountAbsoluteValue);
+        transactionService.create(accountId, type, amountAbsoluteValue);
         return accountId;
     }
 }

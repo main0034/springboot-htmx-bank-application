@@ -33,7 +33,7 @@ class CreateNewAccountUseCaseTest {
 
     @Test
     void should_not_create_new_account_for_if_unknown_customer() {
-        when(customerService.exists(any())).thenReturn(false);
+        givenCustomerIsMissing();
 
         CustomerId unkownCustomer = CustomerId.from(UUID.randomUUID());
         CreateNewAccountCommand command = new CreateNewAccountCommand(
@@ -51,7 +51,7 @@ class CreateNewAccountUseCaseTest {
 
     @Test
     void should_create_account_without_transaction_for_existing_customer_if_balance_is_zero() {
-        when(customerService.exists(any())).thenReturn(true);
+        givenCustomerExists();
 
         CustomerId customerId = CustomerId.from(UUID.randomUUID());
         Balance balanceZero = Balance.from(BigInteger.ZERO);
@@ -80,7 +80,7 @@ class CreateNewAccountUseCaseTest {
 
         @Test
         void should_create_incoming_transaction_for_if_balance_is_positive() {
-            when(customerService.exists(any())).thenReturn(true);
+            givenCustomerExists();
 
             CustomerId customerId = CustomerId.from(UUID.randomUUID());
             Balance balancePoistive = Balance.from(BigInteger.TEN);
@@ -101,12 +101,12 @@ class CreateNewAccountUseCaseTest {
             assertThat(response).isEqualTo(new CreateNewAccountResponse.Success(accountId));
             verify(customerService).exists(customerId);
             verify(accountService).createNew(customerId, balancePoistive);
-            verify(transactionService).createNew(accountId, TransactionType.INCOMING, Amount.from(balancePoistive.abs()));
+            verify(transactionService).create(accountId, TransactionType.INCOMING, Amount.from(balancePoistive.abs()));
         }
 
         @Test
         void should_create_outgoing_transaction_for_if_balance_is_negative() {
-            when(customerService.exists(any())).thenReturn(true);
+            givenCustomerExists();
 
             CustomerId customerId = CustomerId.from(UUID.randomUUID());
             Balance balancePoistive = Balance.from(BigInteger.valueOf(-10));
@@ -127,8 +127,16 @@ class CreateNewAccountUseCaseTest {
             assertThat(response).isEqualTo(new CreateNewAccountResponse.Success(accountId));
             verify(customerService).exists(customerId);
             verify(accountService).createNew(customerId, balancePoistive);
-            verify(transactionService).createNew(accountId, TransactionType.OUTGOING, Amount.from(balancePoistive.abs()));
+            verify(transactionService).create(accountId, TransactionType.OUTGOING, Amount.from(balancePoistive.abs()));
         }
+    }
+
+    private void givenCustomerExists() {
+        when(customerService.exists(any())).thenReturn(true);
+    }
+
+    private void givenCustomerIsMissing() {
+        when(customerService.exists(any())).thenReturn(false);
     }
 
 }
