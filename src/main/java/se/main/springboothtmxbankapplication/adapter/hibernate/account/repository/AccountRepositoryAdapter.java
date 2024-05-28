@@ -38,4 +38,12 @@ public class AccountRepositoryAdapter implements AccountRepository {
                 .map(converter::toDomain)
                 .toList();
     }
+
+    @Override
+    public List<Account> getAll() {
+        return jpaRepository.findAll()
+                .stream()
+                .map(converter::toDomain)
+                .toList();
+    }
 }

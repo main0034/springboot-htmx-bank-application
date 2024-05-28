@@ -32,4 +32,8 @@ public class AccountService {
     public List<Account> getByCustomerId(CustomerId customerId) {
         return accountRepository.getForCustomerId(customerId);
     }
+
+    public List<Account> getAll() {
+        return accountRepository.getAll();
+    }
 }

@@ -13,4 +13,5 @@ public interface AccountRepository {
 
     List<Account> getForCustomerId(CustomerId customerId);
 
+    List<Account> getAll();
 }

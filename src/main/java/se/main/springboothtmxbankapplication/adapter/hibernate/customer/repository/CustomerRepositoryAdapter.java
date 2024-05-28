@@ -7,6 +7,8 @@ import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
 import se.main.springboothtmxbankapplication.domain.customer.port.CustomerRepository;
 import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
+import java.util.List;
+
 @Repository
 public class CustomerRepositoryAdapter implements CustomerRepository {
 
@@ -33,5 +35,13 @@ public class CustomerRepositoryAdapter implements CustomerRepository {
     @Override
     public boolean exists(CustomerId customerId) {
         return jpaRepository.existsById(customerId.getId());
+    }
+
+    @Override
+    public List<Customer> getAll() {
+        return jpaRepository.findAll()
+                .stream()
+                .map(converter::toDomain)
+                .toList();
     }
 }

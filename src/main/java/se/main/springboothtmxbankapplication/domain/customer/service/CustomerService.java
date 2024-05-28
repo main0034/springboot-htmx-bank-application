@@ -7,6 +7,7 @@ import se.main.springboothtmxbankapplication.domain.customer.primitive.Name;
 import se.main.springboothtmxbankapplication.domain.customer.primitive.Surname;
 import se.main.springboothtmxbankapplication.primitive.CustomerId;
 
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -32,5 +33,9 @@ public class CustomerService {
 
     public boolean exists(CustomerId customerId) {
         return customerRepository.exists(customerId);
+    }
+
+    public List<Customer> getAll() {
+        return customerRepository.getAll();
     }
 }
