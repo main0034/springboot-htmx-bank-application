@@ -1,7 +1,7 @@
-package se.main.springboothtmxbankapplication.domain.customer.port;
+package se.main.springboothtmxbankapplication.core.domain.customer.port;
 
-import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.domain.customer.aggregate.Customer;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 public interface CustomerRepository {
 

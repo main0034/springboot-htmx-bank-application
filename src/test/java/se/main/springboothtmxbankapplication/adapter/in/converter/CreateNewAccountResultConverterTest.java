@@ -3,9 +3,9 @@ package se.main.springboothtmxbankapplication.adapter.in.converter;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import se.main.springboothtmxbankapplication.adapter.in.dto.CreateNewAccountResponseRepresentation;
-import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResult;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.application.primitive.CreateNewAccountResult;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import java.util.UUID;
 

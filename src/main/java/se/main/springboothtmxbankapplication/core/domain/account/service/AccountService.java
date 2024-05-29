@@ -1,11 +1,11 @@
-package se.main.springboothtmxbankapplication.domain.account.service;
+package se.main.springboothtmxbankapplication.core.domain.account.service;
 
 import org.springframework.stereotype.Service;
-import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
-import se.main.springboothtmxbankapplication.domain.account.port.AccountRepository;
-import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.domain.account.aggregate.Account;
+import se.main.springboothtmxbankapplication.core.domain.account.port.AccountRepository;
+import se.main.springboothtmxbankapplication.core.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import java.util.List;
 import java.util.UUID;

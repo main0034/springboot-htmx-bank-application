@@ -1,4 +1,4 @@
-package se.main.springboothtmxbankapplication.domain.customer.primitive;
+package se.main.springboothtmxbankapplication.core.domain.customer.primitive;
 
 import org.apache.commons.lang3.Validate;
 

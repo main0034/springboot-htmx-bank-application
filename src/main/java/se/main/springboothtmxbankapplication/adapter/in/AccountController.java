@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import se.main.springboothtmxbankapplication.adapter.in.converter.CreateNewAccountResultConverter;
 import se.main.springboothtmxbankapplication.adapter.in.dto.CreateNewAccountRequest;
 import se.main.springboothtmxbankapplication.adapter.in.dto.CreateNewAccountResponseRepresentation;
-import se.main.springboothtmxbankapplication.application.command.CreateNewAccountCommand;
-import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResult;
-import se.main.springboothtmxbankapplication.application.usecase.CreateNewAccountUseCase;
-import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.application.command.CreateNewAccountCommand;
+import se.main.springboothtmxbankapplication.core.application.primitive.CreateNewAccountResult;
+import se.main.springboothtmxbankapplication.core.application.usecase.CreateNewAccountUseCase;
+import se.main.springboothtmxbankapplication.core.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 
 @RestController

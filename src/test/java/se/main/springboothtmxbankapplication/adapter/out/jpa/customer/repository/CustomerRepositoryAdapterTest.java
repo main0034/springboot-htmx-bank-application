@@ -1,12 +1,12 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.repository;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.customer.repository;
 
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import se.main.springboothtmxbankapplication.CustomerTestFactory;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.converter.CustomerEntityConverter;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.entity.CustomerEntity;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.customer.converter.CustomerEntityConverter;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.customer.entity.CustomerEntity;
 import se.main.springboothtmxbankapplication.core.domain.customer.aggregate.Customer;
 import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 

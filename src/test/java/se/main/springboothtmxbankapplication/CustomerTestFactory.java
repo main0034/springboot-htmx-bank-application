@@ -1,10 +1,10 @@
 package se.main.springboothtmxbankapplication;
 
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.entity.CustomerEntity;
-import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Name;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Surname;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.customer.entity.CustomerEntity;
+import se.main.springboothtmxbankapplication.core.domain.customer.aggregate.Customer;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Name;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Surname;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import java.util.UUID;
 

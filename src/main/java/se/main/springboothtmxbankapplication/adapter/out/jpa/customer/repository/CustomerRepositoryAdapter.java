@@ -1,8 +1,8 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.repository;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.customer.repository;
 
 
 import org.springframework.stereotype.Repository;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.converter.CustomerEntityConverter;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.customer.converter.CustomerEntityConverter;
 import se.main.springboothtmxbankapplication.core.domain.customer.aggregate.Customer;
 import se.main.springboothtmxbankapplication.core.domain.customer.port.CustomerRepository;
 import se.main.springboothtmxbankapplication.core.primitive.CustomerId;

@@ -1,7 +1,7 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.repository;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.repository;
 
 import org.springframework.stereotype.Repository;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.converter.TransactionEntityConverter;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.converter.TransactionEntityConverter;
 import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
 import se.main.springboothtmxbankapplication.core.domain.transaction.port.TransactionRepository;
 import se.main.springboothtmxbankapplication.core.primitive.AccountId;

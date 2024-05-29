@@ -1,4 +1,4 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate;
+package se.main.springboothtmxbankapplication.adapter.out.jpa;
 
 import java.util.Optional;
 import java.util.function.Function;

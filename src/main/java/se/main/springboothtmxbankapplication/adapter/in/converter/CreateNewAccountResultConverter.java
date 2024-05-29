@@ -4,7 +4,7 @@ package se.main.springboothtmxbankapplication.adapter.in.converter;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import se.main.springboothtmxbankapplication.adapter.in.dto.CreateNewAccountResponseRepresentation;
-import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResult;
+import se.main.springboothtmxbankapplication.core.application.primitive.CreateNewAccountResult;
 
 @Component
 public class CreateNewAccountResultConverter {

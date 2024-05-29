@@ -1,8 +1,8 @@
-package se.main.springboothtmxbankapplication.application.primitive;
+package se.main.springboothtmxbankapplication.core.application.primitive;
 
-import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
-import se.main.springboothtmxbankapplication.domain.transaction.aggregate.Transaction;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
 
 import java.util.List;
 

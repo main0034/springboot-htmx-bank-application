@@ -1,18 +1,18 @@
-package se.main.springboothtmxbankapplication.application.usecase;
+package se.main.springboothtmxbankapplication.core.application.usecase;
 
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
-import se.main.springboothtmxbankapplication.application.command.CreateNewAccountCommand;
-import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResult;
-import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
-import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
-import se.main.springboothtmxbankapplication.domain.account.service.AccountService;
-import se.main.springboothtmxbankapplication.domain.customer.service.CustomerService;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.TransactionType;
-import se.main.springboothtmxbankapplication.domain.transaction.service.TransactionService;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.Amount;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.application.command.CreateNewAccountCommand;
+import se.main.springboothtmxbankapplication.core.application.primitive.CreateNewAccountResult;
+import se.main.springboothtmxbankapplication.core.domain.account.aggregate.Account;
+import se.main.springboothtmxbankapplication.core.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.core.domain.account.service.AccountService;
+import se.main.springboothtmxbankapplication.core.domain.customer.service.CustomerService;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionType;
+import se.main.springboothtmxbankapplication.core.domain.transaction.service.TransactionService;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.Amount;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import java.math.BigInteger;
 import java.util.UUID;

@@ -9,9 +9,9 @@ import org.springframework.test.web.servlet.MockMvc;
 import se.main.springboothtmxbankapplication.adapter.CustomerInformationTestFactory;
 import se.main.springboothtmxbankapplication.adapter.in.converter.CustomerInformationConverter;
 import se.main.springboothtmxbankapplication.adapter.in.dto.CustomerInformationRepresentation;
-import se.main.springboothtmxbankapplication.application.primitive.CustomerInformation;
-import se.main.springboothtmxbankapplication.application.usecase.FetchCustomerInformationUseCase;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.application.primitive.CustomerInformation;
+import se.main.springboothtmxbankapplication.core.application.usecase.FetchCustomerInformationUseCase;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import java.util.List;
 import java.util.UUID;

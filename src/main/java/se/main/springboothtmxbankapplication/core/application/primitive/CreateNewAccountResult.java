@@ -1,8 +1,8 @@
-package se.main.springboothtmxbankapplication.application.primitive;
+package se.main.springboothtmxbankapplication.core.application.primitive;
 
 import lombok.EqualsAndHashCode;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 public sealed interface CreateNewAccountResult {
 

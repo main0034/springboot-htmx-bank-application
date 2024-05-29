@@ -1,13 +1,13 @@
 package se.main.springboothtmxbankapplication;
 
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.entity.TransactionEntity;
-import se.main.springboothtmxbankapplication.domain.transaction.aggregate.Transaction;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.Description;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.Timestamp;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.TransactionId;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.TransactionType;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.Amount;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.entity.TransactionEntity;
+import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.Description;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.Timestamp;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionId;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionType;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.Amount;
 
 import java.math.BigInteger;
 import java.time.LocalDateTime;

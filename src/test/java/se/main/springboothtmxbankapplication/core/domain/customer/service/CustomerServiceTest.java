@@ -1,14 +1,14 @@
-package se.main.springboothtmxbankapplication.domain.customer.service;
+package se.main.springboothtmxbankapplication.core.domain.customer.service;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import se.main.springboothtmxbankapplication.CustomerTestFactory;
-import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
-import se.main.springboothtmxbankapplication.domain.customer.port.CustomerRepository;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Name;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Surname;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.domain.customer.aggregate.Customer;
+import se.main.springboothtmxbankapplication.core.domain.customer.port.CustomerRepository;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Name;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Surname;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.assertArg;

@@ -1,16 +1,16 @@
-package se.main.springboothtmxbankapplication.application.usecase;
+package se.main.springboothtmxbankapplication.core.application.usecase;
 
 import org.junit.jupiter.api.Test;
 import se.main.springboothtmxbankapplication.AccountTestFactory;
 import se.main.springboothtmxbankapplication.CustomerTestFactory;
 import se.main.springboothtmxbankapplication.TransactionTestFactory;
-import se.main.springboothtmxbankapplication.application.primitive.CustomerInformation;
-import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
-import se.main.springboothtmxbankapplication.domain.account.service.AccountService;
-import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
-import se.main.springboothtmxbankapplication.domain.customer.service.CustomerService;
-import se.main.springboothtmxbankapplication.domain.transaction.aggregate.Transaction;
-import se.main.springboothtmxbankapplication.domain.transaction.service.TransactionService;
+import se.main.springboothtmxbankapplication.core.application.primitive.CustomerInformation;
+import se.main.springboothtmxbankapplication.core.domain.account.aggregate.Account;
+import se.main.springboothtmxbankapplication.core.domain.account.service.AccountService;
+import se.main.springboothtmxbankapplication.core.domain.customer.aggregate.Customer;
+import se.main.springboothtmxbankapplication.core.domain.customer.service.CustomerService;
+import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
+import se.main.springboothtmxbankapplication.core.domain.transaction.service.TransactionService;
 
 import java.util.List;
 

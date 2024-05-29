@@ -4,9 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Name;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Surname;
-import se.main.springboothtmxbankapplication.domain.customer.service.CustomerService;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Name;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Surname;
+import se.main.springboothtmxbankapplication.core.domain.customer.service.CustomerService;
 
 import java.util.List;
 import java.util.stream.IntStream;

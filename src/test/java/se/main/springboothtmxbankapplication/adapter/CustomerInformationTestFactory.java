@@ -1,17 +1,17 @@
 package se.main.springboothtmxbankapplication.adapter;
 
-import se.main.springboothtmxbankapplication.application.primitive.AccountInformation;
-import se.main.springboothtmxbankapplication.application.primitive.CustomerInformation;
-import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Name;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Surname;
-import se.main.springboothtmxbankapplication.domain.transaction.aggregate.Transaction;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.Description;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.Timestamp;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.TransactionId;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.TransactionType;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.Amount;
+import se.main.springboothtmxbankapplication.core.application.primitive.AccountInformation;
+import se.main.springboothtmxbankapplication.core.application.primitive.CustomerInformation;
+import se.main.springboothtmxbankapplication.core.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Name;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Surname;
+import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.Description;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.Timestamp;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionId;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionType;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.Amount;
 
 import java.math.BigInteger;
 import java.util.List;

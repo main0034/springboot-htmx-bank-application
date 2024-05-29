@@ -1,12 +1,12 @@
-package se.main.springboothtmxbankapplication.domain.transaction.aggregate;
+package se.main.springboothtmxbankapplication.core.domain.transaction.aggregate;
 
 import org.apache.commons.lang3.Validate;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.Description;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.Timestamp;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.TransactionId;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.TransactionType;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.Amount;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.Description;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.Timestamp;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionId;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionType;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.Amount;
 
 import java.util.Optional;
 import java.util.UUID;

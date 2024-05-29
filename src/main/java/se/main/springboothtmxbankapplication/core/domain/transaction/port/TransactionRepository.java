@@ -1,7 +1,7 @@
-package se.main.springboothtmxbankapplication.domain.transaction.port;
+package se.main.springboothtmxbankapplication.core.domain.transaction.port;
 
-import se.main.springboothtmxbankapplication.domain.transaction.aggregate.Transaction;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
 
 import java.util.List;
 

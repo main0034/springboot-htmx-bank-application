@@ -1,11 +1,11 @@
-package se.main.springboothtmxbankapplication.domain.transaction.service;
+package se.main.springboothtmxbankapplication.core.domain.transaction.service;
 
 import org.springframework.stereotype.Service;
-import se.main.springboothtmxbankapplication.domain.transaction.aggregate.Transaction;
-import se.main.springboothtmxbankapplication.domain.transaction.port.TransactionRepository;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.TransactionType;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.Amount;
+import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
+import se.main.springboothtmxbankapplication.core.domain.transaction.port.TransactionRepository;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionType;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.Amount;
 
 import java.util.List;
 

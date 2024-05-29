@@ -1,4 +1,4 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.converter;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.converter;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

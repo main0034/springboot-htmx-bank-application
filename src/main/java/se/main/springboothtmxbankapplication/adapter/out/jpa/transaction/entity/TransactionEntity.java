@@ -1,4 +1,4 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.entity;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.entity;
 
 
 import jakarta.persistence.Column;

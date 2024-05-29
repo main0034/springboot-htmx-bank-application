@@ -1,8 +1,8 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate;
+package se.main.springboothtmxbankapplication.adapter.out.jpa;
 
 import org.springframework.stereotype.Component;
 import se.main.springboothtmxbankapplication.CustomerTestFactory;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.repository.CustomerJpaRepository;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.customer.repository.CustomerJpaRepository;
 
 import java.util.UUID;
 

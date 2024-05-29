@@ -1,9 +1,9 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.converter;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.converter;
 
 
 import org.junit.jupiter.api.Test;
 import se.main.springboothtmxbankapplication.TransactionTestFactory;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.entity.TransactionEntity;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.entity.TransactionEntity;
 import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
 import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.Description;
 import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.TransactionType;
