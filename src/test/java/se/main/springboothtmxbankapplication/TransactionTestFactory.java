@@ -1,6 +1,6 @@
 package se.main.springboothtmxbankapplication;
 
-import se.main.springboothtmxbankapplication.adapter.hibernate.transaction.entity.TransactionEntity;
+import se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.entity.TransactionEntity;
 import se.main.springboothtmxbankapplication.domain.transaction.aggregate.Transaction;
 import se.main.springboothtmxbankapplication.domain.transaction.primitive.Description;
 import se.main.springboothtmxbankapplication.domain.transaction.primitive.Timestamp;

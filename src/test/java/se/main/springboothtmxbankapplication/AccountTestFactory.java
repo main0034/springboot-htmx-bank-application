@@ -1,6 +1,6 @@
 package se.main.springboothtmxbankapplication;
 
-import se.main.springboothtmxbankapplication.adapter.hibernate.account.entity.AccountEntity;
+import se.main.springboothtmxbankapplication.adapter.out.hibernate.account.entity.AccountEntity;
 import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
 import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
 import se.main.springboothtmxbankapplication.primitive.AccountId;

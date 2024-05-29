@@ -3,7 +3,7 @@ package se.main.springboothtmxbankapplication.application.usecase;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import se.main.springboothtmxbankapplication.application.command.CreateNewAccountCommand;
-import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResponse;
+import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResult;
 import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
 import se.main.springboothtmxbankapplication.domain.account.service.AccountService;
 import se.main.springboothtmxbankapplication.domain.customer.service.CustomerService;
@@ -29,12 +29,12 @@ public class CreateNewAccountUseCase {
     }
 
     @Transactional
-    public CreateNewAccountResponse createNewAccount(CreateNewAccountCommand command) {
+    public CreateNewAccountResult createNewAccount(CreateNewAccountCommand command) {
         return customerExists(command.customerId())
                 .map(customerId -> createAccount(customerId, command.initialBalance()))
                 .map(accountId -> createTransactionIfBalanceIsNonZero(accountId, command.initialBalance()))
-                .map(accountId -> (CreateNewAccountResponse) new CreateNewAccountResponse.Success(accountId))
-                .orElseGet(() -> new CreateNewAccountResponse.UnknownCustomer(command.customerId()));
+                .map(accountId -> (CreateNewAccountResult) CreateNewAccountResult.success(accountId))
+                .orElseGet(() -> CreateNewAccountResult.unknownCustomer(command.customerId()));
     }
 
     private Optional<CustomerId> customerExists(CustomerId customerId) {

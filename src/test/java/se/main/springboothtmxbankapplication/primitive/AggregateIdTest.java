@@ -24,6 +24,23 @@ class AggregateIdTest {
                 .isEqualTo("TestImpl[id=" + id + "]");
     }
 
+    @Test
+    void equals_is_true_if_different_objects_but_same_id() {
+        UUID id = UUID.randomUUID();
+        var aggregateId1 = new AggregateIdTestImpl(id);
+        var aggregateId2 = new AggregateIdTestImpl(id);
+
+        assertThat(aggregateId1).isEqualTo(aggregateId2);
+    }
+
+    @Test
+    void equals_is_false_if_different_objects_and_different_id() {
+        var aggregateId1 = new AggregateIdTestImpl(UUID.randomUUID());
+        var aggregateId2 = new AggregateIdTestImpl(UUID.randomUUID());
+
+        assertThat(aggregateId1).isNotEqualTo(aggregateId2);
+    }
+
     private static class AggregateIdTestImpl extends AggregateId {
         AggregateIdTestImpl(UUID id) {
             super(id);

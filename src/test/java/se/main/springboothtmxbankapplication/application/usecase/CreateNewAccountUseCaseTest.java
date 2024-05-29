@@ -3,7 +3,7 @@ package se.main.springboothtmxbankapplication.application.usecase;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import se.main.springboothtmxbankapplication.application.command.CreateNewAccountCommand;
-import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResponse;
+import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResult;
 import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
 import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
 import se.main.springboothtmxbankapplication.domain.account.service.AccountService;
@@ -41,9 +41,9 @@ class CreateNewAccountUseCaseTest {
                 Balance.from(BigInteger.ZERO)
         );
 
-        CreateNewAccountResponse response = useCase.createNewAccount(command);
+        CreateNewAccountResult response = useCase.createNewAccount(command);
 
-        assertThat(response).isEqualTo(new CreateNewAccountResponse.UnknownCustomer(unkownCustomer));
+        assertThat(response).isEqualTo(CreateNewAccountResult.unknownCustomer(unkownCustomer));
         verify(customerService).exists(unkownCustomer);
         verifyNoInteractions(accountService);
         verifyNoInteractions(transactionService);
@@ -67,9 +67,9 @@ class CreateNewAccountUseCaseTest {
                 balanceZero
         );
 
-        CreateNewAccountResponse response = useCase.createNewAccount(command);
+        CreateNewAccountResult response = useCase.createNewAccount(command);
 
-        assertThat(response).isEqualTo(new CreateNewAccountResponse.Success(accountId));
+        assertThat(response).isEqualTo(CreateNewAccountResult.success(accountId));
         verify(customerService).exists(customerId);
         verify(accountService).createNew(customerId, balanceZero);
         verifyNoInteractions(transactionService);
@@ -96,9 +96,9 @@ class CreateNewAccountUseCaseTest {
                     balancePoistive
             );
 
-            CreateNewAccountResponse response = useCase.createNewAccount(command);
+            CreateNewAccountResult response = useCase.createNewAccount(command);
 
-            assertThat(response).isEqualTo(new CreateNewAccountResponse.Success(accountId));
+            assertThat(response).isEqualTo(CreateNewAccountResult.success(accountId));
             verify(customerService).exists(customerId);
             verify(accountService).createNew(customerId, balancePoistive);
             verify(transactionService).create(accountId, TransactionType.INCOMING, Amount.from(balancePoistive.abs()));
@@ -122,9 +122,9 @@ class CreateNewAccountUseCaseTest {
                     balancePoistive
             );
 
-            CreateNewAccountResponse response = useCase.createNewAccount(command);
+            CreateNewAccountResult response = useCase.createNewAccount(command);
 
-            assertThat(response).isEqualTo(new CreateNewAccountResponse.Success(accountId));
+            assertThat(response).isEqualTo(CreateNewAccountResult.success(accountId));
             verify(customerService).exists(customerId);
             verify(accountService).createNew(customerId, balancePoistive);
             verify(transactionService).create(accountId, TransactionType.OUTGOING, Amount.from(balancePoistive.abs()));

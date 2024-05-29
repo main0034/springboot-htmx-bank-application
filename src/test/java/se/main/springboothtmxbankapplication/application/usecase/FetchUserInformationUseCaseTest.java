@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import se.main.springboothtmxbankapplication.AccountTestFactory;
 import se.main.springboothtmxbankapplication.CustomerTestFactory;
 import se.main.springboothtmxbankapplication.TransactionTestFactory;
-import se.main.springboothtmxbankapplication.application.primitive.CustomerInformationResponse;
+import se.main.springboothtmxbankapplication.application.primitive.CustomerInformation;
 import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
 import se.main.springboothtmxbankapplication.domain.account.service.AccountService;
 import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
@@ -35,7 +35,7 @@ class FetchUserInformationUseCaseTest {
         Account account = givenAccount();
         List<Transaction> transactions = givenTransactions();
 
-        CustomerInformationResponse response = useCase.getCustomerInformation(customer.id());
+        CustomerInformation response = useCase.getCustomerInformation(customer.id());
 
         assertThat(response.name()).isEqualTo(customer.name());
         assertThat(response.surname()).isEqualTo(customer.surname());
