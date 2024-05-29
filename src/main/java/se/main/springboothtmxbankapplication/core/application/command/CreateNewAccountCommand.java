@@ -1,8 +1,8 @@
-package se.main.springboothtmxbankapplication.application.command;
+package se.main.springboothtmxbankapplication.core.application.command;
 
 import org.apache.commons.lang3.Validate;
-import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 public record CreateNewAccountCommand(
         CustomerId customerId,

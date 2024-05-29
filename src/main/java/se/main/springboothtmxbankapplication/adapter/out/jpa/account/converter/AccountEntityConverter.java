@@ -1,7 +1,7 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.account.converter;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.account.converter;
 
 import org.springframework.stereotype.Component;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.account.entity.AccountEntity;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.account.entity.AccountEntity;
 import se.main.springboothtmxbankapplication.core.domain.account.aggregate.Account;
 import se.main.springboothtmxbankapplication.core.domain.account.primitve.Balance;
 import se.main.springboothtmxbankapplication.core.primitive.AccountId;

@@ -1,12 +1,12 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.account.repository;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.account.repository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;
 import se.main.springboothtmxbankapplication.AccountTestFactory;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.CustomerTestDataHelper;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.account.entity.AccountEntity;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.CustomerTestDataHelper;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.account.entity.AccountEntity;
 
 import java.util.List;
 import java.util.UUID;

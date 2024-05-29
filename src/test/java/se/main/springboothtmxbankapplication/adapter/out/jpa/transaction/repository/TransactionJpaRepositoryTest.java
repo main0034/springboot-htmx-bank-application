@@ -1,13 +1,13 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.repository;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.repository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.context.annotation.Import;
 import se.main.springboothtmxbankapplication.TransactionTestFactory;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.AccountTestDataHelper;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.CustomerTestDataHelper;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.transaction.entity.TransactionEntity;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.AccountTestDataHelper;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.CustomerTestDataHelper;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.transaction.entity.TransactionEntity;
 
 import java.time.LocalDateTime;
 import java.util.*;

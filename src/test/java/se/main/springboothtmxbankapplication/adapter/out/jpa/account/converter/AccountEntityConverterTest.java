@@ -1,9 +1,9 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.account.converter;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.account.converter;
 
 
 import org.junit.jupiter.api.Test;
 import se.main.springboothtmxbankapplication.AccountTestFactory;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.account.entity.AccountEntity;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.account.entity.AccountEntity;
 import se.main.springboothtmxbankapplication.core.domain.account.aggregate.Account;
 
 import java.math.BigInteger;

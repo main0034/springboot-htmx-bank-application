@@ -1,9 +1,9 @@
-package se.main.springboothtmxbankapplication.domain.customer.aggregate;
+package se.main.springboothtmxbankapplication.core.domain.customer.aggregate;
 
 import org.apache.commons.lang3.Validate;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Name;
-import se.main.springboothtmxbankapplication.domain.customer.primitive.Surname;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Name;
+import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Surname;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 public class Customer {
 

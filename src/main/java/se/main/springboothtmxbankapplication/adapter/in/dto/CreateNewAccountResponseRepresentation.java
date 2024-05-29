@@ -1,8 +1,8 @@
 package se.main.springboothtmxbankapplication.adapter.in.dto;
 
 import org.springframework.http.HttpStatus;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import java.util.UUID;
 

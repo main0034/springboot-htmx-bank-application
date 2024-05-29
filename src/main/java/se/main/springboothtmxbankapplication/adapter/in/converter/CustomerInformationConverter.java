@@ -4,10 +4,10 @@ import org.springframework.stereotype.Component;
 import se.main.springboothtmxbankapplication.adapter.in.dto.AccountInformationRepresentation;
 import se.main.springboothtmxbankapplication.adapter.in.dto.CustomerInformationRepresentation;
 import se.main.springboothtmxbankapplication.adapter.in.dto.TransactionRepresentation;
-import se.main.springboothtmxbankapplication.application.primitive.AccountInformation;
-import se.main.springboothtmxbankapplication.application.primitive.CustomerInformation;
-import se.main.springboothtmxbankapplication.domain.transaction.aggregate.Transaction;
-import se.main.springboothtmxbankapplication.domain.transaction.primitive.Description;
+import se.main.springboothtmxbankapplication.core.application.primitive.AccountInformation;
+import se.main.springboothtmxbankapplication.core.application.primitive.CustomerInformation;
+import se.main.springboothtmxbankapplication.core.domain.transaction.aggregate.Transaction;
+import se.main.springboothtmxbankapplication.core.domain.transaction.primitive.Description;
 
 @Component
 public class CustomerInformationConverter {

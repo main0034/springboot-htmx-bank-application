@@ -1,12 +1,12 @@
-package se.main.springboothtmxbankapplication.domain.account.aggregate;
+package se.main.springboothtmxbankapplication.core.domain.account.aggregate;
 
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import se.main.springboothtmxbankapplication.AccountTestFactory;
-import se.main.springboothtmxbankapplication.domain.account.primitve.Balance;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
-import se.main.springboothtmxbankapplication.primitive.Amount;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.domain.account.primitve.Balance;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.primitive.Amount;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import java.math.BigInteger;
 import java.util.UUID;

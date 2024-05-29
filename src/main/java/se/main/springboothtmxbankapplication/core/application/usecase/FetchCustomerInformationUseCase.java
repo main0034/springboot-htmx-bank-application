@@ -1,14 +1,14 @@
-package se.main.springboothtmxbankapplication.application.usecase;
+package se.main.springboothtmxbankapplication.core.application.usecase;
 
 import org.springframework.stereotype.Component;
-import se.main.springboothtmxbankapplication.application.primitive.AccountInformation;
-import se.main.springboothtmxbankapplication.application.primitive.CustomerInformation;
-import se.main.springboothtmxbankapplication.domain.account.aggregate.Account;
-import se.main.springboothtmxbankapplication.domain.account.service.AccountService;
-import se.main.springboothtmxbankapplication.domain.customer.aggregate.Customer;
-import se.main.springboothtmxbankapplication.domain.customer.service.CustomerService;
-import se.main.springboothtmxbankapplication.domain.transaction.service.TransactionService;
-import se.main.springboothtmxbankapplication.primitive.CustomerId;
+import se.main.springboothtmxbankapplication.core.application.primitive.AccountInformation;
+import se.main.springboothtmxbankapplication.core.application.primitive.CustomerInformation;
+import se.main.springboothtmxbankapplication.core.domain.account.aggregate.Account;
+import se.main.springboothtmxbankapplication.core.domain.account.service.AccountService;
+import se.main.springboothtmxbankapplication.core.domain.customer.aggregate.Customer;
+import se.main.springboothtmxbankapplication.core.domain.customer.service.CustomerService;
+import se.main.springboothtmxbankapplication.core.domain.transaction.service.TransactionService;
+import se.main.springboothtmxbankapplication.core.primitive.CustomerId;
 
 import java.util.List;
 

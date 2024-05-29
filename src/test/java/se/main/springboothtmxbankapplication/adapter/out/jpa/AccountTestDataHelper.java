@@ -1,8 +1,8 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate;
+package se.main.springboothtmxbankapplication.adapter.out.jpa;
 
 import org.springframework.stereotype.Component;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.account.entity.AccountEntity;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.account.repository.AccountJpaRepository;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.account.entity.AccountEntity;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.account.repository.AccountJpaRepository;
 
 import java.math.BigInteger;
 import java.util.UUID;

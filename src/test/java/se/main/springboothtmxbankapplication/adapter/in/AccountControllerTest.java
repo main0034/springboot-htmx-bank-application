@@ -13,9 +13,9 @@ import org.springframework.test.web.servlet.MockMvc;
 import se.main.springboothtmxbankapplication.adapter.in.converter.CreateNewAccountResultConverter;
 import se.main.springboothtmxbankapplication.adapter.in.dto.CreateNewAccountRequest;
 import se.main.springboothtmxbankapplication.adapter.in.dto.CreateNewAccountResponseRepresentation;
-import se.main.springboothtmxbankapplication.application.primitive.CreateNewAccountResult;
-import se.main.springboothtmxbankapplication.application.usecase.CreateNewAccountUseCase;
-import se.main.springboothtmxbankapplication.primitive.AccountId;
+import se.main.springboothtmxbankapplication.core.application.primitive.CreateNewAccountResult;
+import se.main.springboothtmxbankapplication.core.application.usecase.CreateNewAccountUseCase;
+import se.main.springboothtmxbankapplication.core.primitive.AccountId;
 
 import java.math.BigInteger;
 import java.util.UUID;

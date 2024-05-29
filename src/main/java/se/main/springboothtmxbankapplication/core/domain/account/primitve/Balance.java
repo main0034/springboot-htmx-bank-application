@@ -1,7 +1,7 @@
-package se.main.springboothtmxbankapplication.domain.account.primitve;
+package se.main.springboothtmxbankapplication.core.domain.account.primitve;
 
 import org.apache.commons.lang3.Validate;
-import se.main.springboothtmxbankapplication.primitive.Amount;
+import se.main.springboothtmxbankapplication.core.primitive.Amount;
 
 import java.math.BigInteger;
 

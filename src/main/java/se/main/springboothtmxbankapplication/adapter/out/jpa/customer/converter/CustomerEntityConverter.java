@@ -1,7 +1,7 @@
-package se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.converter;
+package se.main.springboothtmxbankapplication.adapter.out.jpa.customer.converter;
 
 import org.springframework.stereotype.Component;
-import se.main.springboothtmxbankapplication.adapter.out.hibernate.customer.entity.CustomerEntity;
+import se.main.springboothtmxbankapplication.adapter.out.jpa.customer.entity.CustomerEntity;
 import se.main.springboothtmxbankapplication.core.domain.customer.aggregate.Customer;
 import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Name;
 import se.main.springboothtmxbankapplication.core.domain.customer.primitive.Surname;
